@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JCV Quiz SPA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="page">
+  <h2>Login</h2>
+  <input id="username" type="text" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <p id="loginError" class="error"></p>
+</div>
+
+<!-- QUIZ PAGE -->
+<div id="quizPage" class="page hidden">
+  <h2>Quiz</h2>
+  <div id="questionBox"></div>
+  <button onclick="nextQuestion()">Next</button>
+</div>
+
+<!-- RESULT PAGE -->
+<div id="resultPage" class="page hidden">
+  <h2>Results</h2>
+  <div id="resultBox"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
